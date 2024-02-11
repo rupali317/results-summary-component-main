@@ -5,22 +5,23 @@ export const BaseStyles = createGlobalStyle`
 :root {
     /* Colors */
     --result-color1-solid: hsl(0, 100%, 67%);
-    --result-color1-opacity: hsl(0, 100%, 67%, 0.95);
+    --result-color1-light: hsl(0, 100%, 98%);
     --result-color2-solid: hsl(39, 100%, 56%);
-    --result-color2-opacity: hsl(39, 100%, 56%, 0.95);
+    --result-color2-light: hsl(38, 100%, 98%);
     --result-color3-solid: hsl(166, 100%, 37%);
-    --result-color3-opacity: hsl(166, 100%, 37%, 0.95);
+    --result-color3-light: hsl(162, 63%, 97%);
     --result-color4-solid: hsl(234, 85%, 45%);
-    --result-color4-opacity: hsl(234, 85%, 45%, 0.95);
+    --result-color4-light: hsl(234, 71%, 97%);
     --gradient-pair1-1: hsl(252, 100%, 67%);
     --gradient-pair1-2: hsl(241, 81%, 54%);
     --gradient-pair2-1: hsla(256, 72%, 46%, 1);
     --gradient-pair2-2: hsla(241, 72%, 46%, 0);
-    --neutral-color-1: hsl(0, 0%, 100%);
-    --neutral-color-2: hsl(220, 100%, 96%)
-    --neutral-color-3: hsl(221, 100%, 96%);
-    --neutral-color-4: hsl(241, 100%, 89%);
-    --neutral-color-5: hsl(224, 30%, 27%);
+    --neutral-color1: hsl(0, 0%, 100%);
+    --neutral-color2: hsl(220, 100%, 96%)
+    --neutral-color3: hsl(221, 100%, 96%);
+    --neutral-color4: hsl(241, 100%, 89%);
+    --neutral-color5-solid: hsl(224, 30%, 27%);
+    --neutral-color5-opacity: hsl(224, 30%, 27%, 0.5);
     --shadow-color: hsla(224, 82%, 58%, 15%);
   
     /* Typography */
@@ -31,9 +32,9 @@ export const BaseStyles = createGlobalStyle`
     --font-size-l: 3.5rem; /* 56px */
     --font-size-xl: 4.5rem; /* 72px; */
   
-    --font-weight-bold: 500;
-    --font-weight-medium: 700;
-    --font-weight-regular: 800;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 800;
   
     --line-height-auto: auto;
     --line-height-xl: 4.5rem; /* 72px; */
@@ -81,28 +82,29 @@ export const BaseStyles = createGlobalStyle`
   
   @font-face {
     font-family: "HankenGrotesk";
-    src: url("/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+    src: url("/assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
     font-weight: 500;
     font-display: swap;
   }
   
   @font-face {
     font-family: "HankenGrotesk";
-    src: url("/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
+    src: url("/assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
     font-weight: 700;
     font-display: swap;
   }
   
   @font-face {
     font-family: "HankenGrotesk";
-    src: url("/fonts/static/HankenGrotesk-ExtraBold.ttf") format("truetype");
+    src: url("/assets/fonts/static/HankenGrotesk-ExtraBold.ttf") format("truetype");
     font-weight: 800;
     font-display: swap;
   }
 `;
 
 export const ResetStyles = createGlobalStyle`
-/* Box sizing rules */ *,
+/* Box sizing rules */
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -164,4 +166,14 @@ svg {
 `;
 
 export const DefaultStyles = createGlobalStyle`
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-s-4);
+    font-family: "HankenGrotesk", sans-serif;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-auto);
+}
 `;
