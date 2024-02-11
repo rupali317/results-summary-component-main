@@ -6,11 +6,10 @@ export const Results = () => {
     return (
       <ResultStyles.IndividualItem
         key={item.category}
-        category={item.category}
-        textColor={item.textColor}
+        textcolor={item.textColor}
       >
-        <ResultStyles.Category>  
-        {/* RRC: Check if this can be done via grid method? instead of flex and introducing another div*/}
+        <ResultStyles.Category>
+          {/* RRC: Check if this can be done via grid method? instead of flex and introducing another div*/}
           <img src={item.icon} alt="" role="presentation"></img>
           <span>{item.category}</span>
         </ResultStyles.Category>

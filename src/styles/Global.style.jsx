@@ -12,7 +12,7 @@ export const BaseStyles = createGlobalStyle`
     --result-color3-light: hsl(162, 63%, 97%);
     --result-color4-solid: hsl(234, 85%, 45%);
     --result-color4-light: hsl(234, 71%, 97%);
-    --gradient-pair1-1: hsl(252, 100%, 67%);
+    --gradient-pair1-1: hsl(252, 100%, 63%);
     --gradient-pair1-2: hsl(241, 81%, 54%);
     --gradient-pair2-1: hsla(256, 72%, 46%, 1);
     --gradient-pair2-2: hsla(241, 72%, 46%, 0);
@@ -163,6 +163,11 @@ svg {
   max-width: 100%;
   display: block;
 }
+
+button {
+    border-width: 0rem;
+    font: inherit;
+}
 `;
 
 export const DefaultStyles = createGlobalStyle`
@@ -173,7 +178,21 @@ body {
     gap: var(--space-s-4);
     font-family: "HankenGrotesk", sans-serif;
     font-size: var(--font-size-xs);
-    font-weight: var(--font-weight-regular);
+    font-weight: var(--font-weight-medium);
     line-height: var(--line-height-auto);
+    background-color: var(--neutral-color1);
+}
+
+button {
+    padding: var(--space-s-1) var(--space-xs-4) var(--space-xs-4);
+    color: var(--neutral-color1);
+    background-color: var(--neutral-color5-solid);
+    border-radius: var(--border-radius-round);
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-bold);
+
+    &:hover {
+        background: linear-gradient(var(--gradient-pair1-1), var(--gradient-pair1-2));
+    }
 }
 `;

@@ -9,11 +9,11 @@ export const ResultLists = styled.ul`
   list-style-type: none;
 `;
 
-// export const IndividualItem = styled.li({ textColor: string })`
+// export const IndividualItem = styled.li({ textcolor: string })`
 //   padding: var(--space-s-1) var(--space-xs-4) var(--space-s-2);
 //   display: flex;
 //   justify-content: space-between;
-//   color: ${({ textColor }) => textColor};
+//   color: ${({ textcolor }) => textcolor};
 //   background-color: var(--result-color1-light);
 //   border-radius: var(--border-radius-softer);
 // `;

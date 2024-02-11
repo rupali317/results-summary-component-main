@@ -1,11 +1,12 @@
+import * as SummaryStyles from "../../styles/SummarySection.style";
 import { Results } from "../Results";
 
 export const SummarySection = () => {
   return (
-    <section>
-      <h2>Summary</h2>
+    <SummaryStyles.SummarySection>
+      <SummaryStyles.Heading>Summary</SummaryStyles.Heading>
       <Results />
       <button>Continue</button>
-    </section>
+    </SummaryStyles.SummarySection>
   );
 };
