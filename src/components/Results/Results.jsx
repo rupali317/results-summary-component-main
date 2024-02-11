@@ -9,12 +9,14 @@ export const Results = () => {
         category={item.category}
         textColor={item.textColor}
       >
-        <ResultStyles.Category>
+        <ResultStyles.Category>  
+        {/* RRC: Check if this can be done via grid method? instead of flex and introducing another div*/}
           <img src={item.icon} alt="" role="presentation"></img>
           <span>{item.category}</span>
         </ResultStyles.Category>
         <ResultStyles.Score>
-          {item.score} <ResultStyles.TotalScore> / 100</ResultStyles.TotalScore>
+          <span>{item.score}</span>
+          <ResultStyles.TotalScore> / 100</ResultStyles.TotalScore>
         </ResultStyles.Score>
       </ResultStyles.IndividualItem>
     );

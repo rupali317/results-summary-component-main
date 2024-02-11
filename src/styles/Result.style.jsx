@@ -32,7 +32,9 @@ export const Category = styled.div`
   gap: var(--space-xs-2);
 `;
 
-export const Score = styled.span`
+export const Score = styled.div`
+  display: flex;
+  gap: var(--space-xs-1);
   color: var(--neutral-color5-solid);
   font-weight: var(--font-weight-bold);
 `;
