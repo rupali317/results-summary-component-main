@@ -22,6 +22,7 @@ export const BaseStyles = createGlobalStyle`
     --neutral-color4: hsl(241, 100%, 89%);
     --neutral-color5-solid: hsl(224, 30%, 27%);
     --neutral-color5-opacity: hsl(224, 30%, 27%, 0.5);
+    --neutral-color6: hsl(0, 0%, 0%);
     --shadow-color: hsla(224, 82%, 58%, 15%);
   
     /* Typography */
@@ -78,6 +79,9 @@ export const BaseStyles = createGlobalStyle`
   
     /* Shadows */
     --shadow: 0rem 1.875rem 3.75rem 0rem var(--shadow-color); /* 0px 30px 60px 0px */
+
+    /* Outline */
+    --outline-width-1: 0.25rem /* 4px */
   }
   
   @font-face {
@@ -193,6 +197,12 @@ button {
 
     &:hover {
         background: linear-gradient(var(--gradient-pair1-1), var(--gradient-pair1-2));
+        box-shadow: var(--shadow);
+        cursor: pointer;
+    }
+
+    &:focus, &:focus-visible {
+        outline: var(--result-color2-solid) solid var(--outline-width-1);
     }
 }
 `;
