@@ -17,7 +17,7 @@ export const BaseStyles = createGlobalStyle`
     --gradient-pair2-1: hsla(256, 72%, 46%, 1);
     --gradient-pair2-2: hsla(241, 72%, 46%, 0);
     --neutral-color1: hsl(0, 0%, 100%);
-    --neutral-color2: hsl(220, 100%, 96%)
+    --neutral-color2: hsl(220, 100%, 96%);
     --neutral-color3: hsl(221, 100%, 96%);
     --neutral-color4: hsl(241, 100%, 89%);
     --neutral-color5-solid: hsl(224, 30%, 27%);
@@ -184,7 +184,12 @@ body {
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-medium);
     line-height: var(--line-height-auto);
+    background-color: var(--neutral-color2);
+}
+
+main {
     background-color: var(--neutral-color1);
+    box-shadow: var(--shadow);
 }
 
 button {
