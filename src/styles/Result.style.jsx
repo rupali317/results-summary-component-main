@@ -1,6 +1,6 @@
 import styled from "styled-components";
+import { DesktopWidth } from "../constants/Breakpoints";
 //import { string } from "prop-types";
-//import { DesktopWidth } from "../constants/Breakpoints";
 
 export const ResultLists = styled.ul`
   display: flex;
@@ -19,12 +19,16 @@ export const ResultLists = styled.ul`
 // `;
 
 export const IndividualItem = styled.li`
-  padding: var(--space-s-1) var(--space-xs-4) var(--space-s-2);
+  padding: var(--space-s-1) var(--space-xs-4) var(--space-xs-4);
   display: flex;
   justify-content: space-between;
   color: var(--result-color1-solid);
   background-color: var(--result-color1-light);
   border-radius: var(--border-radius-softer);
+
+  @media (min-width: ${DesktopWidth}) {
+    font-size: var(--font-size-s);
+  }
 `;
 
 export const Category = styled.div`

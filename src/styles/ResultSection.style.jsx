@@ -44,28 +44,29 @@ export const CircleContainer = styled.div`
   > em {
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-extra-bold);
-    line-height: var(--line-height-l);
+    line-height: var(--line-height-xl);
     color: var(--neutral-color1);
     font-style: normal;
   }
 
   > div {
     font-weight: var(--font-weight-bold);
+    opacity: 51.68%;
   }
 
   @media (min-width: ${DesktopWidth}) {
-      gap: 0.25rem; /* 4px */
-      height: 12.5rem;
-      width: 12.5rem;
-      margin-top: 0.4375rem; /* 7px */
+    gap: 0.25rem; /* 4px */
+    height: 12.5rem; /* 200px */
+    width: 12.5rem; /* 200px */
+    margin-top: 0.4375rem; /* 7px */
 
-      > em {
-          font-size: var(--font-size-xl);
-      }
+    > em {
+      font-size: var(--font-size-xl);
+    }
 
-      > div {
-        font-size: var(--font-size-s);
-      }
+    > div {
+      font-size: var(--font-size-s);
+    }
   }
 `;
 
@@ -80,14 +81,14 @@ export const Comment = styled.div`
   }
 
   @media (min-width: ${DesktopWidth}) {
-      gap: var(--space-xs-3);
+    gap: var(--space-xs-3);
 
-      > h1 {
-          font-size: var(--font-size-m);
-      }
+    > h1 {
+      font-size: var(--font-size-m);
+    }
 
-      > p {
-          font-size: var(--font-size-s);
-      }
+    > p {
+      font-size: var(--font-size-s);
+    }
   }
 `;
