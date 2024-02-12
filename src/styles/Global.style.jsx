@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-//import { DesktopWidth } from "../constants/Breakpoints";
+import { TabletWidth } from "../constants/Breakpoints";
 
 export const BaseStyles = createGlobalStyle`
 :root {
@@ -215,6 +215,12 @@ button {
 
     &:focus, &:focus-visible {
         outline: var(--result-color2-solid) solid var(--outline-width-1);
+    }
+}
+
+@media (min-width: ${TabletWidth}) {
+    body {
+        justify-content: center;
     }
 }
 `;
