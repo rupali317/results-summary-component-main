@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { TabletWidth } from "../constants/Breakpoints";
+import { DesktopWidth, TabletWidth } from "../constants/Breakpoints";
 
 export const BaseStyles = createGlobalStyle`
 :root {
@@ -37,7 +37,7 @@ export const BaseStyles = createGlobalStyle`
     --font-weight-bold: 700;
     --font-weight-extra-bold: 800;
   
-    --line-height-auto: auto;
+    --line-height-normal: normal;
     --line-height-xl: 4.5rem; /* 72px; */
   
     --space-none: 0rem;
@@ -183,7 +183,7 @@ body {
     font-family: "HankenGrotesk", sans-serif;
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-medium);
-    line-height: var(--line-height-auto);
+    line-height: var(--line-height-normal);
     background-color: var(--neutral-color2);
 }
 
@@ -221,6 +221,16 @@ button {
 @media (min-width: ${TabletWidth}) {
     body {
         justify-content: center;
+        gap: var(--space-m-3);
+    }
+}
+
+@media (min-width: ${DesktopWidth}) {
+    main {
+        display: flex;
+        flex-direction: row;
+        border-radius: var(--border-radius-soft);
+        max-width: 46rem; /* 736px */
     }
 }
 `;
