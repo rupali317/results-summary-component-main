@@ -193,6 +193,12 @@ main {
     max-width: 23.4375rem; /* 375px */ /* RRC: Check again */
 }
 
+footer {
+    max-width: 65%;
+    text-align: center;
+    padding-bottom: var(--space-s-4);
+}
+
 button {
     padding: var(--space-s-1) var(--space-xs-4) var(--space-xs-4);
     color: var(--neutral-color1);
