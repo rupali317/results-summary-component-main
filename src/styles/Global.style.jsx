@@ -14,8 +14,8 @@ export const BaseStyles = createGlobalStyle`
     --result-color4-light: hsl(234, 71%, 97%);
     --gradient-pair1-1: hsl(252, 100%, 63%);
     --gradient-pair1-2: hsl(241, 81%, 54%);
-    --gradient-pair2-1: hsla(256, 72%, 46%, 1);
-    --gradient-pair2-2: hsla(241, 72%, 46%, 0);
+    --gradient-pair2-1: hsla(256, 71%, 46%, 1);
+    --gradient-pair2-2: hsla(241, 71%, 46%, 0);
     --neutral-color1: hsl(0, 0%, 100%);
     --neutral-color2: hsl(220, 100%, 96%);
     --neutral-color3: hsl(221, 100%, 96%);
@@ -190,6 +190,7 @@ body {
 main {
     background-color: var(--neutral-color1);
     box-shadow: var(--shadow);
+    max-width: 23.4375rem; /* 375px */ /* RRC: Check again */
 }
 
 button {

@@ -8,7 +8,7 @@ export const ResultSection = () => {
       </ResultSectionStyles.RibbonText>
       <ResultSectionStyles.CircleContainer>
         <em>76</em>
-        <span>of 100</span>
+        <div>of 100</div>
       </ResultSectionStyles.CircleContainer>
       <ResultSectionStyles.Comment>
         <h1>Great</h1>

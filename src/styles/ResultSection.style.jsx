@@ -10,10 +10,45 @@ export const ResultSection = styled.section`
   border-radius: var(--border-radius-none) var(--border-radius-none)
     var(--border-radius-soft) var(--border-radius-soft);
   padding: var(--space-s-4) var(--space-l-4) var(--space-m-3) var(--space-xl-1);
+  text-align: center; /* RRC: Check if this is needed */
+  align-items: center;
 `;
 
-export const RibbonText = styled.p``;
+export const RibbonText = styled.p`
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-bold);
+`;
 
-export const CircleContainer = styled.div``;
+export const CircleContainer = styled.div`
+  background: linear-gradient(var(--gradient-pair2-1), var(--gradient-pair2-2));
+  border-radius: var(--border-radius-round);
+  width: 8.75rem; /* 140px */
+  height: 8.75rem; /* 140px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-export const Comment = styled.div``;
+  > em {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-extra-bold);
+    line-height: var(--line-height-xl);
+    color: var(--neutral-color1);
+    font-style: normal;
+  }
+
+  > div {
+    font-weight: var(--font-weight-bold);
+  }
+`;
+
+export const Comment = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs-1);
+
+  > h1 {
+    line-height: var(--line-height-auto);
+    color: var(--neutral-color1);
+  }
+`;
