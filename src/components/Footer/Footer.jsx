@@ -7,9 +7,10 @@ export const Footer = () => {
         target="_blank"
         rel="noreferrer"
       >
+        {" "}
         Frontend Mentor
       </a>
-      . Coded by
+      . Coded by{" "}
       <a href="https://www.linkedin.com/in/rupali-rc/">Rupali Roy Choudhury</a>
     </small>
   );
