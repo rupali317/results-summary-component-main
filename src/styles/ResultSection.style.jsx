@@ -42,7 +42,7 @@ export const CircleContainer = styled.div`
   justify-content: center;
 
   > em {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-l);
     font-weight: var(--font-weight-extra-bold);
     line-height: var(--line-height-xl);
     color: var(--neutral-color1);

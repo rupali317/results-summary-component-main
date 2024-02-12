@@ -87,7 +87,7 @@ export const BaseStyles = createGlobalStyle`
   @font-face {
     font-family: "HankenGrotesk";
     src: url("/assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
-    font-weight: 500;
+    font-weight: 500;  /* RRC: Check if variables can be used ot not? */
     font-display: swap;
   }
   

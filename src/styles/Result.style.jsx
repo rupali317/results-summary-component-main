@@ -19,7 +19,7 @@ export const ResultLists = styled.ul`
 // `;
 
 export const IndividualItem = styled.li`
-  padding: var(--space-s-1) var(--space-xs-4) var(--space-xs-4);
+  padding: var(--space-s-1) var(--space-xs-4) var(--space-s-2);
   display: flex;
   justify-content: space-between;
   color: var(--result-color1-solid);
@@ -28,6 +28,7 @@ export const IndividualItem = styled.li`
 
   @media (min-width: ${DesktopWidth}) {
     font-size: var(--font-size-s);
+    padding: var(--space-s-1) var(--space-xs-4) var(--space-xs-4);
   }
 `;
 
