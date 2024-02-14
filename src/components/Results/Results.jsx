@@ -10,7 +10,13 @@ export const Results = () => {
       >
         <ResultStyles.Category>
           {/* RRC: Check if this can be done via grid method? instead of flex and introducing another div*/}
-          <img src={item.icon} alt="" role="presentation"></img>
+          <img
+            src={item.icon}
+            alt=""
+            role="presentation"
+            width="20"
+            height="20"
+          ></img>
           <span>{item.category}</span>
         </ResultStyles.Category>
         <ResultStyles.Score>
