@@ -3,7 +3,7 @@ import { DesktopWidth } from "../constants/Breakpoints";
 
 export const ResultSection = styled.section`
   background: linear-gradient(var(--gradient-pair1-1), var(--gradient-pair1-2));
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-1);
   color: var(--neutral-color4);
   display: flex;
   flex-direction: column;

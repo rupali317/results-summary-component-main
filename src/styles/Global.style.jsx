@@ -78,7 +78,8 @@ export const BaseStyles = createGlobalStyle`
     --border-radius-round: 8rem; /* 128px */
   
     /* Shadows */
-    --shadow: 0rem 1.875rem 3.75rem 0rem var(--shadow-color); /* 0px 30px 60px 0px */
+    --shadow-1: 0rem 1.875rem 3.75rem 0rem var(--shadow-color); /* 0px 30px 60px 0px */
+    --shadow-2: 0rem 0rem 0rem var(--outline-width-1) var(--result-color2-solid);
 
     /* Outline */
     --outline-width-1: 0.25rem /* 4px */
@@ -189,7 +190,7 @@ body {
 
 main {
     background-color: var(--neutral-color1);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-1);
     max-width: 23.4375rem; /* 375px */ /* RRC: Check again */
 }
 
@@ -209,12 +210,13 @@ button {
 
     &:hover {
         background: linear-gradient(var(--gradient-pair1-1), var(--gradient-pair1-2));
-        box-shadow: var(--shadow);
+        box-shadow: var(--shadow-1);
         cursor: pointer;
     }
 
     &:focus, &:focus-visible {
-        outline: var(--result-color2-solid) solid var(--outline-width-1);
+        outline: none;
+        box-shadow: var(--shadow-2);
     }
 }
 
