@@ -20,8 +20,8 @@ export const BaseStyles = createGlobalStyle`
     --neutral-color2: hsl(220, 100%, 96%);
     --neutral-color3: hsl(221, 100%, 96%);
     --neutral-color4: hsl(241, 100%, 89%);
-    --neutral-color5-solid: hsl(224, 30%, 27%);
-    --neutral-color5-opacity: hsl(224, 30%, 27%, 0.5);
+    --neutral-color5-solid: hsl(223, 30%, 27%);
+    --neutral-color5-opacity: hsl(223, 30%, 27%, 0.5);
     --neutral-color6: hsl(0, 0%, 0%);
     --shadow-color: hsla(224, 82%, 58%, 15%);
   
