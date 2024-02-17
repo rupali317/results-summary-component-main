@@ -9,7 +9,7 @@ export const Results = () => {
         textcolor={item.textColor}
       >
         <ResultStyles.Category>
-          {/* RRC: Check if this can be done via grid method? instead of flex and introducing another div*/}
+          {/* RRC: Check if this can be done via grid method? instead of flex and introducing another div. If so, rmb to add to readme*/}
           <img
             src={item.icon}
             alt=""
