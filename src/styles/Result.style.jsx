@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { DesktopWidth } from "../constants/Breakpoints";
-//import { string } from "prop-types";
+import { CategoryStyle } from "../constants/CategoryStyle";
 
 export const ResultLists = styled.ul`
   display: flex;
@@ -9,21 +9,14 @@ export const ResultLists = styled.ul`
   list-style-type: none;
 `;
 
-// export const IndividualItem = styled.li({ textcolor: string })`
-//   padding: var(--space-s-1) var(--space-xs-4) var(--space-s-2);
-//   display: flex;
-//   justify-content: space-between;
-//   color: ${({ textcolor }) => textcolor};
-//   background-color: var(--result-color1-light);
-//   border-radius: var(--border-radius-softer);
-// `;
-
 export const IndividualItem = styled.li`
   padding: var(--space-s-1) var(--space-xs-4) var(--space-s-2);
   display: flex;
   justify-content: space-between;
-  color: var(--result-color1-solid);
-  background-color: var(--result-color1-light);
+  ${(props) =>
+    css`
+      ${CategoryStyle[props.$category]}
+    `}
   border-radius: var(--border-radius-softer);
 
   @media (min-width: ${DesktopWidth}) {

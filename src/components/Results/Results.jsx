@@ -6,7 +6,7 @@ export const Results = () => {
     return (
       <ResultStyles.IndividualItem
         key={item.category}
-        textcolor={item.textColor}
+        $category={item.category}
       >
         <ResultStyles.Category>
           {/* RRC: Check if this can be done via grid method? instead of flex and introducing another div. If so, rmb to add to readme*/}
