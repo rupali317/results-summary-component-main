@@ -87,16 +87,16 @@ export const BaseStyles = createGlobalStyle`
 
 @font-face {
   font-family: "HankenGrotesk";
-  src: url("/assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
-  font-weight: var(--font-weight-bold);
+  src: url("/assets/fonts/static/HankenGrotesk-ExtraBold.ttf")
+    format("truetype");
+  font-weight: var(--font-weight-extra-bold);
   font-display: swap;
 }
 
 @font-face {
   font-family: "HankenGrotesk";
-  src: url("/assets/fonts/static/HankenGrotesk-ExtraBold.ttf")
-    format("truetype");
-  font-weight: var(--font-weight-extra-bold);
+  src: url("/assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
+  font-weight: var(--font-weight-bold);
   font-display: swap;
 }
 
