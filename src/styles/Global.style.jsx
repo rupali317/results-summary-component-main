@@ -89,21 +89,21 @@ export const BaseStyles = createGlobalStyle`
   font-family: "HankenGrotesk";
   src: url("/assets/fonts/static/HankenGrotesk-ExtraBold.ttf")
     format("truetype");
-  font-weight: var(--font-weight-extra-bold);
+  font-weight: 800;   /*RRC: Check if variables can be used */
   font-display: swap;
 }
 
 @font-face {
   font-family: "HankenGrotesk";
   src: url("/assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
-  font-weight: var(--font-weight-bold);
+  font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
   font-family: "HankenGrotesk";
   src: url("/assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
-  font-weight: var(--font-weight-medium);
+  font-weight: 500;
   font-display: swap;
 }
 `;
