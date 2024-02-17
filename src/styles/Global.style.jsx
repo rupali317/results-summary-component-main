@@ -4,11 +4,11 @@ import { DesktopWidth, TabletWidth } from "../constants/Breakpoints";
 export const BaseStyles = createGlobalStyle`
 :root {
   /* Colors */
-  --result-color1-solid: hsl(0, 100%, 67%);
+  --result-color1-solid: hsl(0, 79%, 48%);
   --result-color1-light: hsl(0, 100%, 98%);
-  --result-color2-solid: hsl(39, 100%, 56%);
+  --result-color2-solid: hsl(39, 88%, 31%);
   --result-color2-light: hsl(38, 100%, 98%);
-  --result-color3-solid: hsl(166, 100%, 37%);
+  --result-color3-solid: hsl(166, 90%, 25%);
   --result-color3-light: hsl(162, 63%, 97%);
   --result-color4-solid: hsl(234, 85%, 45%);
   --result-color4-light: hsl(234, 71%, 97%);
@@ -87,15 +87,8 @@ export const BaseStyles = createGlobalStyle`
 
 @font-face {
   font-family: "HankenGrotesk";
-  src: url("/assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
-  font-weight: 500; /* RRC: Check if variables can be used ot not? */
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "HankenGrotesk";
   src: url("/assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   font-display: swap;
 }
 
@@ -103,7 +96,14 @@ export const BaseStyles = createGlobalStyle`
   font-family: "HankenGrotesk";
   src: url("/assets/fonts/static/HankenGrotesk-ExtraBold.ttf")
     format("truetype");
-  font-weight: 800;
+  font-weight: var(--font-weight-extra-bold);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HankenGrotesk";
+  src: url("/assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+  font-weight: var(--font-weight-medium);
   font-display: swap;
 }
 `;
