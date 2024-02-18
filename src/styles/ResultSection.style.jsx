@@ -11,7 +11,7 @@ export const ResultSection = styled.section`
   border-radius: var(--border-radius-none) var(--border-radius-none)
     var(--border-radius-soft) var(--border-radius-soft);
   padding: var(--space-s-4) var(--space-l-4) var(--space-m-3) var(--space-xl-1);
-  text-align: center; /* RRC: Check if this is needed */
+  text-align: center;
   align-items: center;
 
   @media (min-width: ${DesktopWidth}) {

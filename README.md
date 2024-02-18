@@ -66,7 +66,7 @@ TBD
 ### What I learned
 
 - ```linear-gradient``` works on background and not background-color since the latter expects a solid color.
-- While using description list would gave been more appropriate instead of unordered list, the former can cause accessibility issues. For instance, when I used description list annd used VoiceOver, it declared 8 items instead of 4 items under the summary. Therefore, I reverted back to using unordered list.
+- While using description list would gave been more appropriate instead of unordered list, the former can cause accessibility issues. For instance, when I used description list and used VoiceOver, it declared 8 items instead of 4 items under the summary. Therefore, I reverted back to using unordered list.
 TBD
 
 ### Continued development
@@ -75,7 +75,7 @@ TBD
 
 ### Useful resources
 
-- [Description lists's accessibility concerns](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl#accessibility_concerns) - This helped me be aware of how different screen readers can innterpret ```<dl>``` differently
+- [Description lists's accessibility concerns](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl#accessibility_concerns) - This helped me be aware of how different screen readers can interpret ```<dl>``` differently
 TBD
 
 ## Author
@@ -85,5 +85,5 @@ TBD
 
 ## Acknowledgments
 
-- I express my gratitude towards my mentor - Deborah for the insightful code review session
+- I express my gratitude towards my mentor - Deborah for the insightful code review session and for helpi
 TBD
