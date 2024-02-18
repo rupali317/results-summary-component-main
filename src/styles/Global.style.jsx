@@ -192,7 +192,8 @@ body {
 main {
   background-color: var(--neutral-color1);
   box-shadow: var(--shadow-1);
-  max-width: 23.4375rem; /* 375px */ /* RRC: Check again */
+  min-width: 22.5rem; /* 360px */
+  max-width: 27.5rem; /* 440px */
 }
 
 footer {
