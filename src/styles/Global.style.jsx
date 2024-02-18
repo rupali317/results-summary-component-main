@@ -87,9 +87,8 @@ export const BaseStyles = createGlobalStyle`
 
 @font-face {
   font-family: "HankenGrotesk";
-  src: url("/assets/fonts/static/HankenGrotesk-ExtraBold.ttf")
-    format("truetype");
-  font-weight: 800;   /*RRC: Check if variables can be used */
+  src: url("/assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
   font-display: swap;
 }
 
@@ -102,8 +101,9 @@ export const BaseStyles = createGlobalStyle`
 
 @font-face {
   font-family: "HankenGrotesk";
-  src: url("/assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
-  font-weight: 500;
+  src: url("/assets/fonts/static/HankenGrotesk-ExtraBold.ttf")
+    format("truetype");
+  font-weight: 800;
   font-display: swap;
 }
 `;
