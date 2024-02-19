@@ -10,6 +10,7 @@ export const ResultLists = styled.ul`
 `;
 
 export const IndividualItem = styled.li`
+  padding: var(--space-s-1) var(--space-xs-4) var(--space-s-2);
   display: grid;
   grid-template-columns: 1.25rem auto 1.3125rem 2.6875rem; /* 20px auto 21px 43px */
   column-gap: var(--space-xs-1);
