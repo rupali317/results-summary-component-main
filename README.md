@@ -42,11 +42,11 @@ Users should be able to:
 
 [Mobile version](https://pagespeed.web.dev/analysis/https-results-summary-rc-netlify-app/12gimzc15z?form_factor=mobile)
 
-![PageSpeed insights mobile](./public/assets/images/mobile/Page-speed-insights-mobile.png)
+![PageSpeed insights mobile](./public/assets/images/Page-speed-insights-mobile.png)
 
 [Desktop version](https://pagespeed.web.dev/analysis/https-results-summary-rc-netlify-app/12gimzc15z?form_factor=desktop)
 
-![PageSpeed insights desktop](./public/assets/images/desktop/Page-speed-insights-desktop.png)
+![PageSpeed insights desktop](./public/assets/images/Page-speed-insights-desktop.png)
 
 ### Links
 
