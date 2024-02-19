@@ -24,6 +24,7 @@ export const BaseStyles = createGlobalStyle`
   --neutral-color5-opacity: hsl(223, 30%, 27%, 0.75);
   --neutral-color6: hsl(0, 0%, 0%);
   --shadow-color: hsla(224, 82%, 58%, 15%);
+  --ouline-color: hsl(39, 64%, 57%);
 
   /* Typography */
   --font-size-xs: 1rem; /* 16px */
@@ -79,7 +80,7 @@ export const BaseStyles = createGlobalStyle`
 
   /* Shadows */
   --shadow-1: 0rem 1.875rem 3.75rem 0rem var(--shadow-color); /* 0px 30px 60px 0px */
-  --shadow-2: 0rem 0rem 0rem var(--outline-width-1) var(--result-color2-solid);
+  --shadow-2: 0rem 0rem 0rem var(--outline-width-1) var(--ouline-color);
 
   /* Outline */
   --outline-width-1: 0.25rem; /* 4px */
