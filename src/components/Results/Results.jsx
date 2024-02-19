@@ -8,21 +8,18 @@ export const Results = () => {
         key={item.category}
         $category={item.category}
       >
-        <ResultStyles.Category>
-          {/* RRC: Check if this can be done via grid method? instead of flex and introducing another div. If so, rmb to add to readme*/}
-          <img
-            src={item.icon}
-            alt=""
-            role="presentation"
-            width="20"
-            height="20"
-          ></img>
-          <span>{item.category}</span>
-        </ResultStyles.Category>
-        <ResultStyles.Score>
-          <span>{item.score}</span>
-          <ResultStyles.TotalScore> / 100</ResultStyles.TotalScore>
-        </ResultStyles.Score>
+        <img
+          src={item.icon}
+          alt=""
+          role="presentation"
+          width="20"
+          height="20"
+        ></img>
+        <ResultStyles.Category>{item.category}</ResultStyles.Category>
+        <ResultStyles.IndividualScore>
+          {item.score}
+        </ResultStyles.IndividualScore>
+        <ResultStyles.TotalScore> / 100</ResultStyles.TotalScore>
       </ResultStyles.IndividualItem>
     );
   });

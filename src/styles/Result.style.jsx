@@ -10,9 +10,9 @@ export const ResultLists = styled.ul`
 `;
 
 export const IndividualItem = styled.li`
-  padding: var(--space-s-1) var(--space-xs-4) var(--space-s-2);
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1.25rem auto 1.3125rem 2.6875rem; /* 20px auto 21px 43px */
+  column-gap: var(--space-xs-1);
   ${(props) =>
     css`
       ${CategoryStyle[props.$category]}
@@ -25,18 +25,16 @@ export const IndividualItem = styled.li`
   }
 `;
 
-export const Category = styled.div`
-  display: flex;
-  gap: var(--space-xs-2);
+export const Category = styled.span`
+  margin-left: 0.25rem; /* 4px */
 `;
 
-export const Score = styled.div`
-  display: flex;
-  gap: var(--space-xs-1);
+export const IndividualScore = styled.span`
   color: var(--neutral-color5-solid);
   font-weight: var(--font-weight-bold);
 `;
 
 export const TotalScore = styled.span`
   color: var(--neutral-color5-opacity);
+  font-weight: var(--font-weight-bold);
 `;

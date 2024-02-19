@@ -1,6 +1,6 @@
 # Frontend Mentor - Results summary component solution
 
-This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -50,10 +50,10 @@ TBD
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Styled Components](https://styled-components.com/) - For styles
-TBD
 
 ### Tested with
 
@@ -65,9 +65,9 @@ TBD
 
 ### What I learned
 
-- ```linear-gradient``` works on background and not background-color since the latter expects a solid color.
+- `linear-gradient` works on background and not background-color since the latter expects a solid color.
 - While using description list would gave been more appropriate instead of unordered list, the former can cause accessibility issues. For instance, when I used description list and used VoiceOver, it declared 8 items instead of 4 items under the summary. Therefore, I reverted back to using unordered list.
-TBD
+  TBD
 
 ### Continued development
 
@@ -75,8 +75,8 @@ TBD
 
 ### Useful resources
 
-- [Description lists's accessibility concerns](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl#accessibility_concerns) - This helped me be aware of how different screen readers can interpret ```<dl>``` differently
-TBD
+- [Description lists's accessibility concerns](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl#accessibility_concerns) - This helped me be aware of how different screen readers can interpret `<dl>` differently
+  TBD
 
 ## Author
 
@@ -86,4 +86,4 @@ TBD
 ## Acknowledgments
 
 - I express my gratitude towards my mentor - Deborah for the insightful code review session and for helpi
-TBD
+  TBD
