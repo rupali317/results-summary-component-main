@@ -30,13 +30,23 @@ Users should be able to:
 
 ### Screenshots
 
-![](./screenshot.jpg)
+##### 1. Desktop version
 
-TBD
+![Results summary component desktop version](./public/assets/images/Results%20summary%20component%20desktop%20version.png)
+
+##### 2. Mobile version
+
+![Results summary component mobile version](./public/assets/images/Results%20summary%20component%20mobile%20version.png)
 
 ### PageSpeed Insights results
 
-TBD
+[Mobile version](https://pagespeed.web.dev/analysis/https-results-summary-rc-netlify-app/12gimzc15z?form_factor=mobile)
+
+![PageSpeed insights mobile](./public/assets/images/mobile/Page-speed-insights-mobile.png)
+
+[Desktop version](https://pagespeed.web.dev/analysis/https-results-summary-rc-netlify-app/12gimzc15z?form_factor=desktop)
+
+![PageSpeed insights desktop](./public/assets/images/desktop/Page-speed-insights-desktop.png)
 
 ### Links
 
@@ -67,16 +77,14 @@ TBD
 
 - `linear-gradient` works on background and not background-color since the latter expects a solid color.
 - While using description list would gave been more appropriate instead of unordered list, the former can cause accessibility issues. For instance, when I used description list and used VoiceOver, it declared 8 items instead of 4 items under the summary. Therefore, I reverted back to using unordered list.
-  TBD
 
 ### Continued development
 
-TBD
+Use Storybook to generate the variations of results.
 
 ### Useful resources
 
 - [Description lists's accessibility concerns](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl#accessibility_concerns) - This helped me be aware of how different screen readers can interpret `<dl>` differently
-  TBD
 
 ## Author
 
@@ -85,5 +93,5 @@ TBD
 
 ## Acknowledgments
 
-- I express my gratitude towards my mentor - Deborah for the insightful code review session and for helpi
-  TBD
+- I express my gratitude towards my mentor - Deborah for the insightful code review session and for demonstrating how styled ocmponents can be used to effectively display the variation in stylings of results.
+- I thank Front end mentor members in answering my doubts related to the usage of css custom properties in `@font-face`
