@@ -14,6 +14,7 @@ export const IndividualItem = styled.li`
   display: grid;
   grid-template-columns: 1.25rem auto 1.3125rem 2.6875rem; /* 20px auto 21px 43px */
   column-gap: var(--space-xs-1);
+  align-items: center;
   ${(props) =>
     css`
       ${CategoryStyle[props.$category]}
